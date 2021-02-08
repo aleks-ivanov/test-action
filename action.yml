@@ -18,6 +18,7 @@ runs:
       run: echo "::set-output name=random-id::$(echo $RANDOM)"
       shell: bash
     - run: |
+        ls -l
         cd ${{ github.action_path }}
         ls -l
         chmod +x goodbye.sh
