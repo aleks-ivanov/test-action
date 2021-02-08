@@ -20,6 +20,8 @@ runs:
     - run: |
         cd ${{ github.action_path }}
         ls -l
+        chmod +x goodbye.sh
+        ls -l
       shell: bash
     - run: ${{ github.action_path }}/goodbye.sh
       shell: bash
