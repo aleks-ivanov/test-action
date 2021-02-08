@@ -19,10 +19,10 @@ runs:
       shell: bash
     - run: |
         ls -l
-        cd ${{ github.action_path }}
+        cd $GITHUB_ACTION_PATH
         ls -l
         chmod +x goodbye.sh
         ls -l
       shell: bash
-    - run: ${{ github.action_path }}/goodbye.sh
+    - run: $GITHUB_ACTION_PATH/goodbye.sh
       shell: bash
